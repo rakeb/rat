@@ -15,7 +15,7 @@ def cat(file_path):
     if os.path.isfile(file_path):
         try:
             with open(file_path) as f:
-                return f.read(4000)
+                return f.read()
         except IOError:
             return 'Error: Permission denied.'
     else:

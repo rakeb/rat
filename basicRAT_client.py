@@ -142,7 +142,7 @@ def main():
 
     while True:
         conn = socket.socket()
-        conn.settimeout(2)
+        # conn.settimeout(30)
         try:
             host = sys.argv[1]
         except:
